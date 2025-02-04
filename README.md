@@ -1,4 +1,4 @@
-### Progetto STEAM 🎮
+# Progetto STEAM 🎮
 
 # Team 👥:
 - Davide Delogu
