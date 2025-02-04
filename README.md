@@ -1,10 +1,10 @@
 # Progetto STEAM 🎮
 
 ## Team 👥:
-- Davide Delogu
-- Giulio Paternò
-- Francesco Re
-- Luca Torelli
+- Davide Delogu (5^B ROB)
+- Giulio Paternò (5^B ROB)
+- Francesco Re (5^B ROB)
+- Luca Torelli (5^B ROB)
 
 ## Idea 💡:
 - Videogioco RPG / rogue-like con livelli generati casualmente
