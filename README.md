@@ -19,21 +19,3 @@
 
 ## Linguaggio utilizzato 💻:
 - Python (libreria pygame)
-
-## Requisiti
-- Python 3.9+
-- Librerie nel file requirements.txt
-
-## Installazione
-```bash
-git clone https://github.com/Giulio006/progettoSTEAM
-cd roguelike-ai
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Esecuzione
-```bash
-python main.py
-```
