@@ -4,10 +4,12 @@ game:
   tile_size: 10
 
 world:
-  room_count: 10
+  room_count: 20
   min_room_size: 5
   max_room_size: 20
-
+player:
+  speed: 1
+  
 ai:
   learning_rate: 0.001
   discount_factor: 0.99

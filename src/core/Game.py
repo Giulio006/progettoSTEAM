@@ -10,7 +10,6 @@ from src.utils.config import load_config
 
 class Game:
     def __init__(self):
-        # Print di debug
         print("Inizializzazione Game...")
         
         # Carica configurazioni
@@ -81,26 +80,22 @@ class Game:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return False
-            
-            if event.type == pygame.KEYDOWN:
-                keys = pygame.key.get_pressed()
-                
-                if keys[pygame.K_LEFT]:
-                    self.player.move(-1, 0, self.dungeon_map)
-                if keys[pygame.K_RIGHT]:
-                    self.player.move(1, 0, self.dungeon_map)
-                if keys[pygame.K_UP]:
-                    self.player.move(0, -1, self.dungeon_map)
-                if keys[pygame.K_DOWN]:
-                    self.player.move(0, 1, self.dungeon_map)
         
+        # Gestione input continuo
+        keys = pygame.key.get_pressed()
+        self.player.handle_input(keys)
         return True
+
+    def update(self):
+        # Aggiorna la posizione del player
+        self.player.update(self.dungeon_map)
 
     def run(self):
         print("Avvio del loop di gioco...")
         running = True
         while running:
             running = self.handle_events()
+            self.update()  
             self.draw()
             self.clock.tick(60)  # 60 FPS
         
